@@ -28,6 +28,7 @@ class TestContextExamples extends FunSuite with EffectTesting {
     ctx.tick(5.seconds)                                // <4>
     assertEquals(f.value, Some(Failure(timeoutError))) // <4>
     // end::sleep[]
+    //	
   }
 
   test("IO.race") {
